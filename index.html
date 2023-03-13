@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jodo de adivinhação númerica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Jogo de adivinhação numérica</h1>
+        <p>Neste jogo, o computador irá escolher um número entre <strong>0 e 100</strong> e o jogador deve acertar com o menor número de tentativas!</p>
+        <label id="hints"></label>
+        <label style="display: none;" id="cpuNumber">*Número escolhido pelo computador*</label>
+        <div>
+            <label for="inputAttempts">Digite aqui sua tentativa: </label>
+            <input type="number" name="inputAttempts" id="inputAttempts" placeholder="0 até 100">
+            <input disabled id="validate" onclick="handleClick()" type="button" value="Validar">
+        </div>
+        <p>
+            <label>Tentativas: </label>
+            <label id="attempts">0</label>
+        </p>
+        <p>
+            <input id="start" onclick="handleStart()" type="button" value="Começar">
+        </p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
